@@ -21,3 +21,13 @@ var wordLimit = 8;
 var shortText = truncateWords(originalText, wordLimit);
 console.log('originalText: ' + originalText);
 console.log('shortText: ' + shortText);
+
+
+var wordlist = 'red orange yellow green blue indigo violet';
+var wordlistArray = wordlist.split(' ');
+var newWordList = wordlistArray.join(' ');
+console.log(newWordList);
+console.log(wordlist);
+
+var shortWordList = wordlistArray.splice(3, 3);
+console.log('shortWordList: ' + shortWordList);
